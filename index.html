@@ -92,8 +92,6 @@
 
 <script>
     jQuery.getJSON("database.json", function (json) {
-
-        console.log(json)
         var responseRes = "";
         var rowsNum = 0;
         for (row in json) {
@@ -109,7 +107,7 @@
 
             if (rowsNum == 0) {
                 responseRes = responseRes + '<div class="row">' + res;
-            } else if (rowsNum == 3) {
+            } else if (rowsNum == 2) {
                 responseRes = responseRes + res + '</div>';
                 rowsNum = 0;
             } else {
@@ -117,9 +115,7 @@
                 rowsNum = rowsNum + 1;
             }
         }
-        console.log(responseRes);
         $('#container')[0].innerHTML = responseRes;
-
     });
 </script>
 
