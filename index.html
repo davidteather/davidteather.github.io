@@ -92,7 +92,8 @@
 
 <script>
     jQuery.getJSON("database.json", function (json) {
-        console.log('here')
+
+        console.log(json)
         var responseRes = "";
         var rowsNum = 0;
         for (row in json) {
