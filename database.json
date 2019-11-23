@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "bodytext": "For this project I had to develop a content management system for an archaeology company in the UK. This system allows the owners of the site to add new project pages, similar to a blog formatting.",
+      "date": "July 1st, 2019",
+      "longtext": "For this project I had to develop a content management system for an archaeology company in the UK. This system allows the owners of the site to add new project pages, similar to a blog formatting. In this project I used NodeJS and MySQL. I learned how to make an efficient CMS system that is also very user-friendly. Unfortunately, you will not be able to access the CMS system as it is only for the site owners, however you will still be able to view the blog style posts that they have published. I also learned how to create a file uploading system, which I had never done before and it was an important functionality of the website.",
+      "projecttitle": "past-participate",
+      "projecturl": "http://pastparticipate.co.uk/",
+      "imgsource": "https://i.imgur.com/Ypv2bVW.png",
+      "articletitle": "Past Participate"
+    },
+    {
+      "id": 2,
+      "bodytext": "I had the idea for this project when my friends wanted statistics on a groupchat we are in. I looked into it and GroupMe does have an API and I decided to start making it.",
+      "date": "April 12th, 2019",
+      "longtext": "I had the idea for this project when friends in a groupchat wanted statistics on how many messages had been ever sent in the groupchat we are all in. I looked into it and realized that GroupMe does have an API. At the start this bot only had basic functionality and just statistics for the chat. However, it soon began to develop further with different APIs ranging from Joke APIs, Quote APIs, and finally my other functions I made. This bot ended up being over 1,000 lines in python overall. It's not a publically accessible bot as it's just running on a groupchat with my friends. I learned how to make my first chatbot in python with these different functions. It was a fun way to develop something that could interact with my friends and not just for my own enjoyment.",
+      "projecttitle": "groupme-bot",
+      "projecturl": "NoUrl",
+      "imgsource": "https://i.imgur.com/ICmLnmp.png",
+      "articletitle": "GroupMe Bot"
+    },
+    {
+      "id": 3,
+      "bodytext": "This project was initially supposed to be commissioned. However, I was never paid and decided to expand upon the project to make it a website. This website finds peer to peer microloans that fit criteria so a person can make profit by lending.",
+      "date": "March 28th, 2019",
+      "longtext": "Once again, this project was supposed to be a lot simpler and not as a publically accessible website. However, when the person who was supposed to pay me never responsed to any follow up questions I decided it was something to do and finished it and created a website out of it. The website is not fully finished as I'm not 18 at the time of writing this and am unable to accept payments as an individual. Anyways, the functionality of this website is you signup and create a 'listing' to get emailed when a peer to peer microloan that fits certain criteria that you specify in the 'listing'. It taught me a LOT about REGEX/Regular Expressions as that is what I use to extract information from a loan. It was quite difficult to actually learn REGEX, however now the website works pretty well and I am satisfied with the performance.",
+      "projecttitle": "lending-profit",
+      "projecturl": "https://lendingprofit.com/",
+      "imgsource": "https://i.imgur.com/MvNKuoS.png",
+      "articletitle": "Lending Profit"
+    },
+    {
+      "id": 4,
+      "bodytext": "I noticed that on youtube there were a lot of channels that used a text to speech engine to read reddit content. I realized that these people were probably manually editing these videos. So, I decided to replicate the videos using a script.",
+      "date": "July 10th, 2019",
+      "longtext": "This project wasn't too hard as I applied the skills I learned from the Video Captioner project here using FFmpeg again. FFmpeg is a tool to edit videos programmatically. I learned how to use Amazon's polly service, which is a text to speech engine on their AWS service.",
+      "projecttitle": "reddit-video-creation",
+      "projecturl": "NoUrl",
+      "imgsource": "https://i.imgur.com/WvFbsxL.png",
+      "articletitle": "Reddit Video Creation"
+    },
+    {
+      "id": 5,
+      "bodytext": "I was getting paid to manually caption a company's social media videos and I decided that it was time consuming and began to develop a program that would do it for me.",
+      "date": "April 10",
+      "longtext": "I was being paid to manually edit a company's videos to have captions at the bottom for social media posting. After about a week I realized I was not being paid enough for this tedious work I had to do everyday ontop of homework. I started to develop a program that would take a video and automatically add captions to them. This was very challenging because I had never edited videos using a program before. I found FFmpeg, this is a program that lets you edit videos in any programming language that is fairly easy to learn. The script would basically split up the video's audio every 2 seconds or so and send them to a speech recognition service to get what was said in each clip and put that text on the video. After a while I ended up finishing this script and taking out any bugs and for a few weeks I ended up using this program to provide the company with edited videos. I decided to start to make a website for the software as well, in the development of the website I learned how to use NodeJS, Microsoft Azure's speech to text engine, how to efficiently store data in MySQL, I learned how to create a refferal system for users using the site. It was a huge step forwards in my ability to create websites. I ended up never actually making the website public.",
+      "projecttitle": "video-captioner",
+      "projecturl": "NoUrl",
+      "imgsource": "https://i.imgur.com/0lgiy6a.png",
+      "articletitle": "Video Captioner"
+    },
+    {
+      "id": 6,
+      "bodytext": "This project took place all the way back in the summer of 2017. This was the first website I had ever created. It was a simple Amazon affiliate deals website. I learned a lot from this first real programming project.",
+      "date": "June 23",
+      "longtext": "Going into this project I had no idea about any web development. Honestly, looking back it's amazing how much I've improved in 2 years. I had no clue how to even write HTML or make a good looking website. I had no understanding of databases. I ended up using PHP for my website backend. I managed to learn what a database was and how to access it in PHP. I ended up making the website along with some other basic functionality I messed around with. I had some small applications on the website such as a random string generator from 2 words. Honestly, it was a ton of fun and a great learning experience. Unfortunately, I didn't know the importance of backing things up. I didn't lose everything from the website, however it is no longer running.",
+      "projecttitle": "dealsteal-us",
+      "projecturl": "NoUrl",
+      "imgsource": "https://i.imgur.com/o01KYfV.png",
+      "articletitle": "DealSteal"
+    }
+  ]

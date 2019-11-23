@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <title>David Teather</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/album/album.css">
+</head>
+
+<body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">David Teather</h4>
+                        <p class="text-muted">Hello, I'm David Teather. Thanks for visiting my website. Some of the most
+                            significant projects to me are listed below feel free to explore!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <strong>David Teather</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Some of my previous projects</h1>
+                <p class="lead text-muted">Hello, welcome to my website. Below is a list of all of my previous favorite
+                    projects I have worked on. If you want to view more information about a specific project, just click
+                    on
+                    the project's card.</p>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container" id="container">
+                <!--
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="projectURL" style="color:inherit;text-decoration:none;">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" src="imgSource">
+                                <div class="card-body">
+                                    <p class="card-text"></p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <small class="text-muted"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>-->
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="">Back to top</a>
+            </p>
+            <p></p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    jQuery.getJSON("database.json", function (json) {
+        console.log('here')
+        var responseRes = "";
+        var rowsNum = 0;
+        for (row in json) {
+
+            var res = '<div class="col-md-4"><a href="project.html?title="' + json[row].projecttitle +
+                '" style="color:inherit;text-decoration:none;">' +
+                '<div class="card mb-4 box-shadow"><img class="card-img-top" src="' + json[row].imgsource +
+                '"><div class="card-body">' +
+                '<p class="card-text">' + json[row].bodytext +
+                '</p><div class="d-flex justify-content-between align-items-center">' +
+                '<small class="text-muted"></small></div></div></div></a></div>'
+
+
+            if (rowsNum == 0) {
+                responseRes = responseRes + '<div class="row">';
+            } else if (rowsNum == 3) {
+                responseRes = responseRes + '</div>';
+            } else {
+                responseRes = responseRes + res;
+                rowsNum = rowsNum + 1;
+            }
+        }
+        console.log
+        $('#container').innerHTML = responseRes;
+
+    });
+</script>
+
+
+</html>

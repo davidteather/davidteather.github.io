@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <title>David Teather</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/album/album.css">
+</head>
+
+<body>
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">David Teather</h4>
+                    <p class="text-muted">Hello, I'm David Teather. Thanks for visiting my website. Some of the most significant projects to me are listed below feel free to explore!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <a href="/" class="navbar-brand d-flex align-items-center">
+                <strong>David Teather</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+
+    <main role="main" class="container">
+        <div class="row">
+            <img src="<%- article[0]['imgsource'] %>" style="width:100%;height:100%;">
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 blog-main" style="margin-top:10px;">
+                <div class="blog-post">
+                    <h2 class="blog-post-title"><%- article[0]['articletitle'] %></h2>
+                    <p class="blog-post-meta">David Teather</p>
+
+                    <p><%- article[0]['longtext'] %></p>
+
+                    <p></p>
+                    <% if (article[0]['projecturl'] != "NoUrl") { %>
+                    <p>Project Link: <a href="<%- article[0]['projecturl'] %>" target="_blank">Here</a></p>
+                    <% } %>
+
+                    <p></p>
+                    <p>Home Link: <a href="/" target="_self">Here</a></p>
+
+                </div><!-- /.blog-post -->
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </main>
+</div>
+</body>
