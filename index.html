@@ -108,9 +108,9 @@
 
 
             if (rowsNum == 0) {
-                responseRes = responseRes + '<div class="row">';
+                responseRes = responseRes + '<div class="row">' + res;
             } else if (rowsNum == 3) {
-                responseRes = responseRes + '</div>';
+                responseRes = responseRes + res + '</div>';
                 rowsNum = 0;
             } else {
                 responseRes = responseRes + res;
