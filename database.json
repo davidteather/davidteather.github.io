@@ -5,7 +5,8 @@
     "projecttitle": "covid-19-extension",
     "projecturl": "https://chrome.google.com/webstore/detail/covid-19-tracker/hneejppldokgoladcnbmfkedbilapddf",
     "imgsource": "https://i.imgur.com/62TLXYt.png",
-    "articletitle": "COVID-19 Tracking Extension"
+    "articletitle": "COVID-19 Tracking Google Chrome Extension",
+    "bold_intro": "Chrome Extension"
   },
   {
     "date": "August 27, 2019",
@@ -13,7 +14,8 @@
     "projecttitle": "tiktok-api",
     "projecturl": "https://github.com/davidteather/TikTok-Api",
     "imgsource": "https://i.imgur.com/xWEvEm9.png",
-    "articletitle": "TikTok-Api"
+    "articletitle": "TikTok-Api",
+    "bold_intro": "TikTok Unofficial API"
   },
   {
     "date": "July 1st, 2019",
@@ -21,7 +23,8 @@
     "projecttitle": "past-participate",
     "projecturl": "http://pastparticipate.co.uk/",
     "imgsource": "https://i.imgur.com/Ypv2bVW.png",
-    "articletitle": "Past Participate"
+    "articletitle": "Past Participate",
+    "bold_intro": "Content Management System"
   },
   {
     "date": "April 12th, 2019",
@@ -29,7 +32,8 @@
     "projecttitle": "groupme-bot",
     "projecturl": "NoUrl",
     "imgsource": "https://i.imgur.com/ICmLnmp.png",
-    "articletitle": "GroupMe Bot"
+    "articletitle": "GroupMe Bot",
+    "bold_intro": "Chatbot"
   },
   {
     "date": "March 28th, 2019",
@@ -37,7 +41,8 @@
     "projecttitle": "lending-profit",
     "projecturl": "https://lendingprofit.com/",
     "imgsource": "https://i.imgur.com/MvNKuoS.png",
-    "articletitle": "Lending Profit"
+    "articletitle": "Lending Profit",
+    "bold_intro": "Node.JS Website"
   },
   {
     "date": "July 10th, 2019",
@@ -45,7 +50,8 @@
     "projecttitle": "reddit-video-creation",
     "projecturl": "NoUrl",
     "imgsource": "https://i.imgur.com/WvFbsxL.png",
-    "articletitle": "Reddit Video Creation"
+    "articletitle": "Reddit Video Creation",
+    "bold_intro": "Automatic Video Creation"
   },
   {
     "date": "April 10th, 2019",
@@ -53,7 +59,8 @@
     "projecttitle": "video-captioner",
     "projecturl": "NoUrl",
     "imgsource": "https://i.imgur.com/uh09p0w.png",
-    "articletitle": "Video Captioner"
+    "articletitle": "Video Captioner",
+    "bold_intro": "Video Captioner"
   },
   {
     "date": "June 23rd, 2017",
@@ -61,6 +68,7 @@
     "projecttitle": "dealsteal-us",
     "projecturl": "NoUrl",
     "imgsource": "https://i.imgur.com/o01KYfV.png",
-    "articletitle": "DealSteal"
+    "articletitle": "DealSteal",
+    "bold_intro": "Affiliate Marketing Website"
   }
 ]
