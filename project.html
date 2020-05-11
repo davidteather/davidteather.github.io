@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
@@ -15,62 +13,92 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <title>David Teather</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" >
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/album/album.css">
 </head>
 
 <body>
-<header>
-    <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-7 py-4">
-                    <h4 class="text-white">David Teather</h4>
-                    <p class="text-muted">Hello, I'm David Teather. Thanks for visiting my website. Some of the most significant projects to me are listed below feel free to explore!</p>
+
+    <!--Header start-->
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">David Teather</h4>
+                        <p class="text-muted">Hello, I'm David Teather. Thanks for visiting my website. Some of the most
+                            significant projects to me are listed below feel free to explore!</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="container d-flex justify-content-between">
-            <a href="/" class="navbar-brand d-flex align-items-center">
-                <strong>David Teather</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
-                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </div>
-</header>
-
-<div class="container">
-
-    <main role="main" class="container">
-        <div class="row">
-            <img src="<%- article[0]['imgsource'] %>" style="width:100%;height:100%;">
-        </div>
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 blog-main" style="margin-top:10px;">
-                <div class="blog-post">
-                    <h2 class="blog-post-title"><%- article[0]['articletitle'] %></h2>
-                    <p class="blog-post-meta">David Teather</p>
-
-                    <p><%- article[0]['longtext'] %></p>
-
-                    <p></p>
-                    <% if (article[0]['projecturl'] != "NoUrl") { %>
-                    <p>Project Link: <a href="<%- article[0]['projecturl'] %>" target="_blank">Here</a></p>
-                    <% } %>
-
-                    <p></p>
-                    <p>Home Link: <a href="/" target="_self">Here</a></p>
-
-                </div><!-- /.blog-post -->
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <strong>David Teather</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <div class="col-md-2"></div>
         </div>
-    </main>
-</div>
+    </header>
+    <!-- Header end -->
+
+    <div class="container">
+        <main role="main" class="container">
+            <div class="row" id='image_link'>
+
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 blog-main" style="margin-top:10px;">
+                    <div class="blog-post">
+                        <h2 class="blog-post-title" id="articleTitle"></h2>
+                        <p class="blog-post-meta">David Teather</p>
+
+                        <p id="longText"> </p>
+
+                        <p></p>
+
+                        <p id="projectLink"></p>
+
+                        <p></p>
+                        <p>Home Link: <a href="index.html" target="_self">Here</a></p>
+
+                    </div><!-- /.blog-post -->
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </main>
+    </div>
 </body>
+
+<script>
+    jQuery.getJSON("https://davidteather.github.io/database.json", function (json) {
+        var responseRes = "";
+        var title = window.location.href.split("title=")[1];
+        var found = false
+
+        for (row in json) {
+            if (json[row]['projecttitle'] == title) {
+                found = true;
+                $('#image_link')[0].innerHTML = '<img src="' + json[row]['imgsource'] +
+                    '" style="width:100%;height:100%;">';
+                $('#articleTitle')[0].innerHTML = json[row]['articletitle'];
+                $('#longText')[0].innerHTML = json[row]['longtext'];
+                if (json[row]['projecturl'] != 'NoUrl') {
+                    $('#projectLink')[0].innerHTML = 'Check it out <a href="' + json[row]['projectlink'] +
+                        '>here</a>';
+                }
+            }
+        }
+
+        if (!found) {
+            $('#articleTitle')[0].innerHTML = 'Not found!'
+        }
+    });
+</script>
+
+</html>
