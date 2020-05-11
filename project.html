@@ -58,6 +58,7 @@
                 <div class="col-md-8 blog-main" style="margin-top:10px;">
                     <div class="blog-post">
                         <h2 class="blog-post-title" id="articleTitle"></h2>
+                        <p class="lead" id="date"></p>
                         <p class="blog-post-meta">David Teather</p>
 
                         <p id="longText"> </p>
@@ -90,6 +91,7 @@
                     '" style="width:100%;height:100%;">';
                 $('#articleTitle')[0].innerHTML = json[row]['articletitle'];
                 $('#longText')[0].innerHTML = json[row]['longtext'];
+                $('#date')[0].innerHTML = json[row]['date']
                 if (json[row].projecturl != 'NoUrl') {
                     $('#projectLink')[0].innerHTML = 'Check it out <a href="' + json[row].projecturl +
                         '" target="_blank">here</a>';
