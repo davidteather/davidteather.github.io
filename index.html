@@ -93,8 +93,8 @@
         var responseRes = "";
 
         for (row in json) {
-            if (json[row].longtext.length > 150) {
-                var bodyText = json[row].longtext.substring(0, 150) + "..."
+            if (json[row].longtext.length > 170) {
+                var bodyText = json[row].longtext.substring(0, 170) + "..."
             } else {
                 var bodyText = json[row].longtext;
             }
