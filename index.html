@@ -16,6 +16,7 @@
     <title>David Teather</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/album/album.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -75,7 +76,7 @@
             var res = `<div class="col-md-4 float-left">
                 <a href="project.html?title=${json[row].projecttitle}" style="color:inherit;text-decoration:none;">
                     <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="${json[row].imgsource}" style="height:200px;">
+                        <img class="card-img-top img-icon" src="${json[row].imgsource}">
                         <div class="card-body">
                             <p class="card-text">${bodyText}</p>
                             <div class="d-flex justify-content-between align-items-center">
