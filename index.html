@@ -67,12 +67,12 @@
         var responseRes = "";
 
         for (row in json) {
-            if (json[row].longtext.length > 180) {
+            if (json[row].longtext.length > 175) {
                 var bodyText = json[row].longtext.substring(0,180) + "..."
             } else {
                 var bodyText = json[row].longtext;
             }
-            var res = `<div class="col-md-4 float-left" style="height:450px;">
+            var res = `<div class="col-md-4 float-left">
                 <a href="project.html?title=${json[row].projecttitle}" style="color:inherit;text-decoration:none;">
                     <div class="card mb-4 box-shadow">
                         <img class="card-img-top" src="${json[row].imgsource}" style="height:200px;">
