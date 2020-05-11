@@ -16,8 +16,27 @@
     <title>David Teather</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/album/album.css">
-    <link rel="stylesheet" href="main.css">
 </head>
+
+<style>
+    @media (min-width: 1200px) {
+        .img-icon {
+            height: 200px;
+        }
+    }
+
+    @media (max-width: 1199px) and (min-width: 993px) {
+        .img-icon {
+            height: 200px;
+        }
+    }
+
+    @media (max-width:992px) and (min-width:800px) {
+        .img-icon {
+            height: 200px;
+        }
+    }
+</style>
 
 <body>
     <header>
@@ -28,13 +47,15 @@
                         <h4 class="text-white">David Teather</h4>
                         <p class="text-muted">Hello, I'm David Teather. Thanks for visiting my website. Some of the most
                             significant projects to me are listed below feel free to explore!</p>
+                        <br>
+                        <p class="text-muted"><b>Email:</b> contact.davidteather@gmail.com</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="navbar navbar-dark bg-dark box-shadow">
             <div class="container d-flex justify-content-between">
-                <a href="#" class="navbar-brand d-flex align-items-center">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
                     <strong>David Teather</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
@@ -68,17 +89,17 @@
         var responseRes = "";
 
         for (row in json) {
-            if (json[row].longtext.length > 175) {
-                var bodyText = json[row].longtext.substring(0,180) + "..."
+            if (json[row].longtext.length > 160) {
+                var bodyText = json[row].longtext.substring(0, 160) + "..."
             } else {
                 var bodyText = json[row].longtext;
             }
-            var res = `<div class="col-md-4 float-left">
+            var res = `<div class="col-md-6 float-left mx-auto" style="margin-bottom:60px;">
                 <a href="project.html?title=${json[row].projecttitle}" style="color:inherit;text-decoration:none;">
-                    <div class="card mb-4 box-shadow">
+                    <div class="card mb-6 box-shadow">
                         <img class="card-img-top img-icon" src="${json[row].imgsource}">
                         <div class="card-body">
-                            <p class="card-text">${bodyText}</p>
+                            <p class="card-text"><b>${json[row].articletitle}</b> ${bodyText}</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted"></small>
                             </div>
