@@ -1,5 +1,23 @@
 [
   {
+    "date": "May 25th, 2020",
+    "longtext": "A website that is meant to promote smaller youtuber's videos on a separate website. I had seen a lot of smaller youtubers complaining around the internet that their videos are not shown as much and don't get as much traction as larger videos despite putting in more time. This was a short two day project, but it allows youtubers to publish a link that gets sent to a review queue which then I approve or deny. Approved videos are shown on the landing page in a random order",
+    "projecttitle": "rising-yt",
+    "projecturl": "https://risingyt.com/",
+    "imgsource": "https://i.imgur.com/s3ZFN01.png",
+    "articletitle": "Rising-YT A Website To Promote Smaller Creators",
+    "bold_intro": "Rising.YT"
+  },
+  {
+    "date": "April 20th, 2020",
+    "longtext": "A web application that is designed to match people who wanted to speak to another person on different social medium. This is most closely a dating site but instead of relationships it attempts to build friendships. A person would register through a social media platform and then write a short bio and add some interests. Our algorithm then would show some matches to the user and they could accept or decline. If both parties accept then the information of the connected social media accounts is shared to each other.",
+    "projecttitle": "socialize-today",
+    "projecturl": "https://www.socialize.today/",
+    "imgsource": "https://i.imgur.com/KSHzyr3.png",
+    "articletitle": "Socialize.Today Web Application",
+    "bold_intro": "Socialize.Today"
+  },
+  {
     "date": "March 24th, 2020",
     "longtext": "This is a google chrome extension that tracks the COVID-19 statistics within the United States by each state. This project was my first chrome extension and it taught me a lot about how chrome extensions work. I had to work around the security measures in place for chrome extensions to finish a working extension. I published this extension to the google chrome store. The link is below if you want to install it and check it out.",
     "projecttitle": "covid-19-extension",
