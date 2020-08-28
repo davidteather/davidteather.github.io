@@ -2,16 +2,12 @@
 
 <head>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <title>David Teather</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -24,13 +20,13 @@
             height: 200px;
         }
     }
-
+    
     @media (max-width: 1199px) and (min-width: 993px) {
         .img-icon {
             height: 200px;
         }
     }
-
+    
     @media (max-width:992px) and (min-width:800px) {
         .img-icon {
             height: 200px;
@@ -45,8 +41,7 @@
                 <div class="row">
                     <div class="col-sm-8 col-md-7 py-4">
                         <h4 class="text-white">David Teather</h4>
-                        <p class="text-muted">Hello, I'm David Teather. Thanks for visiting my website. Some of the most
-                            significant projects to me are listed below feel free to explore!</p>
+                        <p class="text-muted">Hello, I'm David Teather. Thanks for visiting my website. Some of the most significant projects to me are listed below feel free to explore!</p>
                         <br>
                         <p class="text-muted"><b>Email:</b> contact.davidteather@gmail.com</p>
                     </div>
@@ -58,8 +53,7 @@
                 <a href="index.html" class="navbar-brand d-flex align-items-center">
                     <strong>David Teather</strong>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -72,24 +66,19 @@
             <div class="container">
                 <h1 class="jumbotron-heading">Previous Projects</h1>
                 <p class="lead text-muted">Welcome! Glad you're checking out my portfolio.</p>
-                <p class="lead text-muted">This is a list of my most memorable projects, not necessarily the most
-                    outstanding work I've done. </p>
+                <p class="lead text-muted">This is a list of my most memorable projects, not necessarily the most outstanding work I've done. </p>
 
-                <p class="lead text-muted">The projects closest
-                    to the top are the newest and the ones towards the bottom might be all the way from 2017.</p>
+                <p class="lead text-muted">The projects closest to the top are the newest and the ones towards the bottom might be all the way from 2017.</p>
 
                 <p class="lead text-muted">Click on a project for a more detailed overview.</p>
             </div>
         </section>
 
-        <div class="container" id="container">
-        </div>
-
-
+        <div id="container"></div>
     </main>
 </body>
 <script>
-    jQuery.getJSON("https://davidteather.github.io/database.json", function (json) {
+    jQuery.getJSON("https://davidteather.github.io/database.json", function(json) {
         var responseRes = "";
 
         for (row in json) {
@@ -98,10 +87,10 @@
             } else {
                 var bodyText = json[row].longtext;
             }
-            var res = `<div class="col-md-6 float-left mx-auto" style="margin-bottom:60px;">
+            var res = `<div class="col-lg-6 mx-auto" style="margin-bottom:60px;">
                 <a href="project.html?title=${json[row].projecttitle}" style="color:inherit;text-decoration:none;">
-                    <div class="card mb-6 box-shadow">
-                        <img class="card-img-top img-icon" src="${json[row].imgsource}">
+                    <div class="card mb-12 box-shadow">
+                        <img class="card-img-top" src="${json[row].imgsource}">
                         <div class="card-body">
                             <p class="card-text"><b>${json[row].bold_intro}</b> - ${bodyText}</p>
                             <div class="d-flex justify-content-between align-items-center">

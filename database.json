@@ -1,92 +1,109 @@
-[
-  {
-    "date": "May 25th, 2020",
-    "longtext": "A website that is meant to promote smaller youtuber's videos on a separate website. I had seen a lot of smaller youtubers complaining around the internet that their videos are not shown as much and don't get as much traction as larger videos despite putting in more time. This was a short two day project, but it allows youtubers to publish a link that gets sent to a review queue which then I approve or deny. Approved videos are shown on the landing page in a random order",
-    "projecttitle": "rising-yt",
-    "projecturl": "https://risingyt.com/",
-    "imgsource": "https://i.imgur.com/s3ZFN01.png",
-    "articletitle": "Rising-YT A Website To Promote Smaller Creators",
-    "bold_intro": "Rising.YT"
-  },
-  {
-    "date": "April 20th, 2020",
-    "longtext": "A web application that is designed to match people who wanted to speak to another person on different social medium. This is most closely a dating site but instead of relationships it attempts to build friendships. A person would register through a social media platform and then write a short bio and add some interests. Our algorithm then would show some matches to the user and they could accept or decline. If both parties accept then the information of the connected social media accounts is shared to each other.",
-    "projecttitle": "socialize-today",
-    "projecturl": "https://www.socialize.today/",
-    "imgsource": "https://i.imgur.com/KSHzyr3.png",
-    "articletitle": "Socialize.Today Web Application",
-    "bold_intro": "Socialize.Today"
-  },
-  {
-    "date": "March 24th, 2020",
-    "longtext": "This is a google chrome extension that tracks the COVID-19 statistics within the United States by each state. This project was my first chrome extension and it taught me a lot about how chrome extensions work. I had to work around the security measures in place for chrome extensions to finish a working extension. I published this extension to the google chrome store. The link is below if you want to install it and check it out.",
-    "projecttitle": "covid-19-extension",
-    "projecturl": "https://chrome.google.com/webstore/detail/covid-19-tracker/hneejppldokgoladcnbmfkedbilapddf",
-    "imgsource": "https://i.imgur.com/62TLXYt.png",
-    "articletitle": "COVID-19 Tracking Google Chrome Extension",
-    "bold_intro": "Chrome Extension"
-  },
-  {
-    "date": "August 27, 2019",
-    "longtext": "This project is an unofficial package for python that allows users to get data from the TikTok api, which is not supposed to be open to the public. I learned a lot about reverse engineering a product and it continues to be an uphill battle trying to maintain this API with the continual changes from the TikTok platform. It was my first package I ever made for python and published it and it has done far better than I thought it would. The idea for this package came from me wanting to automate videos I saw on Youtube of compiled videos of TikToks and decided to make a package for the world to use.",
-    "projecttitle": "tiktok-api",
-    "projecturl": "https://github.com/davidteather/TikTok-Api",
-    "imgsource": "https://i.imgur.com/xWEvEm9.png",
-    "articletitle": "TikTok-Api",
-    "bold_intro": "TikTok Unofficial API"
-  },
-  {
-    "date": "July 1st, 2019",
-    "longtext": "This is a content management system for an archaeology company in the UK, which is sort of similar to a blog content management system. This system allows the owners of the site to add new project pages, for updates in their various digs it also allows them to edit existing pages. In this project I used NodeJS and MySQL. I learned how to make an efficient CMS system that is also user-friendly. I also learned how to create a file uploading system, which I had never done before and it was an important functionality of the website.",
-    "projecttitle": "past-participate",
-    "projecturl": "http://pastparticipate.co.uk/",
-    "imgsource": "https://i.imgur.com/Ypv2bVW.png",
-    "articletitle": "Past Participate",
-    "bold_intro": "Admin Site"
-  },
-  {
-    "date": "April 12th, 2019",
-    "longtext": "This is a chatbot for the social media platform called GroupMe. I had the idea for this project when friends in a groupchat wanted statistics on how many messages had been ever sent in the groupchat we are all in. I looked into it and realized that GroupMe has an API. At the start this bot only had basic functionality and just statistics for the chat. However, it soon began to develop further with different APIs ranging from Joke APIs, Quote APIs, and finally my other functions I made. It was a fun way to develop something that could interact with my friends and not just for my own enjoyment. Later in the development cycle this was my first instance with deploying an application to heroku and using continuous deployment with my private github repository.",
-    "projecttitle": "groupme-bot",
-    "projecturl": "NoUrl",
-    "imgsource": "https://i.imgur.com/ICmLnmp.png",
-    "articletitle": "GroupMe Bot",
-    "bold_intro": "Chatbot"
-  },
-  {
-    "date": "March 28th, 2019",
-    "longtext": "This is a website that allows users to be notified via email when a loan from a subreddit is posted. I learned about how to actually deploy a website and have it functioning and learned a lot about linux and ubuntu. It was my first website with a login feature. This website was written all in node.js using express templates.",
-    "projecttitle": "lending-profit",
-    "projecturl": "https://lendingprofit.com/",
-    "imgsource": "https://i.imgur.com/MvNKuoS.png",
-    "articletitle": "Lending Profit",
-    "bold_intro": "Node.JS Website"
-  },
-  {
-    "date": "July 10th, 2019",
-    "longtext": "This project creates automatic videos from inputs from different reddit posts creating a video using aws polly as the text to speech engine. This was one of my largest projects and I learned a ton along the way. I learned how to use FFMpeg to a much higher degree than before. I ended up growing quite a substantial Youtube channel using this script of just under 3,000 subscribers and over 1 million views before abandoning the project.",
-    "projecttitle": "reddit-video-creation",
-    "projecturl": "NoUrl",
-    "imgsource": "https://i.imgur.com/WvFbsxL.png",
-    "articletitle": "Reddit Video Creation",
-    "bold_intro": "Automatic Video Creation"
-  },
-  {
-    "date": "April 10th, 2019",
-    "longtext": "This script created videos that would have a top and bottom text that would match the current video's speech. I came up with this idea after being paid to do this by hand for way too little so I decided to automate my job. It was my first time using FFMpeg and I learned a lot during my course of development of this project.",
-    "projecttitle": "video-captioner",
-    "projecturl": "NoUrl",
-    "imgsource": "https://i.imgur.com/uh09p0w.png",
-    "articletitle": "Video Captioner",
-    "bold_intro": "Video Captioner"
-  },
-  {
-    "date": "June 23rd, 2017",
-    "longtext": "This was my first website I ever created. It was also my first major development of anything in software. It was a simple amazon affiliates website, but I learned so much about development across the few months I was working on this. I built the entire thing with my own style sheets without bootstrap or anything similar to that. I learned about databases, php, javascript, html, css, and so much more. It was really my first major project and it will always remain a strong memory for me.",
-    "projecttitle": "dealsteal-us",
-    "projecturl": "NoUrl",
-    "imgsource": "https://i.imgur.com/o01KYfV.png",
-    "articletitle": "DealSteal",
-    "bold_intro": "Affiliate Marketing Website"
-  }
+[{
+        "date": "August 26th, 2020",
+        "longtext": "I was attempting to find covid-19 cases near my college, which is the University of Wisconsin Madison, but all the Wisconsin covid-19 data was based on census tracts. So I made by own dashboard.",
+        "projecttitle": "madison-covid-19",
+        "projecturl": "https://madisoncovid19.com/",
+        "imgsource": "https://i.imgur.com/LYV3jQ0.png",
+        "articletitle": "Madision Covid-19 Case Dashboard",
+        "bold_intro": "Madison Covid Dashboard"
+    },
+    {
+        "date": "June 5th, 2020",
+        "longtext": "This was a commissioned project that I took on, which was to make a website that allows users to register and report a specific address of having a party. Parties are indicated with a red cirlce, the more the reports the larger the circle. I used angular2, mongodb, and node.js for this project. I also can't guarantee the website url is going to work.",
+        "projecttitle": "chile-party-tracker",
+        "projecturl": "http://54.94.224.9/",
+        "imgsource": "https://i.imgur.com/5XeW8tZ.png",
+        "articletitle": "Chile Party Tracker",
+        "bold_intro": "Chile Party Tracker"
+    },
+    {
+        "date": "May 25th, 2020",
+        "longtext": "A website that is meant to promote smaller youtuber's videos on a separate website. I had seen a lot of smaller youtubers complaining around the internet that their videos are not shown as much and don't get as much traction as larger videos despite putting in more time. This was a short two day project, but it allows youtubers to publish a link that gets sent to a review queue which then I approve or deny. Approved videos are shown on the landing page in a random order",
+        "projecttitle": "rising-yt",
+        "projecturl": "https://risingyt.com/",
+        "imgsource": "https://i.imgur.com/s3ZFN01.png",
+        "articletitle": "Rising-YT A Website To Promote Smaller Creators",
+        "bold_intro": "Rising.YT"
+    },
+    {
+        "date": "April 20th, 2020",
+        "longtext": "A web application that is designed to match people who wanted to speak to another person on different social medium. This is most closely a dating site but instead of relationships it attempts to build friendships. A person would register through a social media platform and then write a short bio and add some interests. Our algorithm then would show some matches to the user and they could accept or decline. If both parties accept then the information of the connected social media accounts is shared to each other.",
+        "projecttitle": "socialize-today",
+        "projecturl": "https://www.socialize.today/",
+        "imgsource": "https://i.imgur.com/KSHzyr3.png",
+        "articletitle": "Socialize.Today Web Application",
+        "bold_intro": "Socialize.Today"
+    },
+    {
+        "date": "March 24th, 2020",
+        "longtext": "This is a google chrome extension that tracks the COVID-19 statistics within the United States by each state. This project was my first chrome extension and it taught me a lot about how chrome extensions work. I had to work around the security measures in place for chrome extensions to finish a working extension. I published this extension to the google chrome store. The link is below if you want to install it and check it out.",
+        "projecttitle": "covid-19-extension",
+        "projecturl": "https://chrome.google.com/webstore/detail/covid-19-tracker/hneejppldokgoladcnbmfkedbilapddf",
+        "imgsource": "https://i.imgur.com/62TLXYt.png",
+        "articletitle": "COVID-19 Tracking Google Chrome Extension",
+        "bold_intro": "Chrome Extension"
+    },
+    {
+        "date": "August 27, 2019",
+        "longtext": "This project is an unofficial package for python that allows users to get data from the TikTok api, which is not supposed to be open to the public. I learned a lot about reverse engineering a product and it continues to be an uphill battle trying to maintain this API with the continual changes from the TikTok platform. It was my first package I ever made for python and published it and it has done far better than I thought it would. The idea for this package came from me wanting to automate videos I saw on Youtube of compiled videos of TikToks and decided to make a package for the world to use.",
+        "projecttitle": "tiktok-api",
+        "projecturl": "https://github.com/davidteather/TikTok-Api",
+        "imgsource": "https://i.imgur.com/xWEvEm9.png",
+        "articletitle": "TikTok-Api",
+        "bold_intro": "TikTok Unofficial API"
+    },
+    {
+        "date": "July 1st, 2019",
+        "longtext": "This is a content management system for an archaeology company in the UK, which is sort of similar to a blog content management system. This system allows the owners of the site to add new project pages, for updates in their various digs it also allows them to edit existing pages. In this project I used NodeJS and MySQL. I learned how to make an efficient CMS system that is also user-friendly. I also learned how to create a file uploading system, which I had never done before and it was an important functionality of the website.",
+        "projecttitle": "past-participate",
+        "projecturl": "http://pastparticipate.co.uk/",
+        "imgsource": "https://i.imgur.com/Ypv2bVW.png",
+        "articletitle": "Past Participate",
+        "bold_intro": "Admin Site"
+    },
+    {
+        "date": "April 12th, 2019",
+        "longtext": "This is a chatbot for the social media platform called GroupMe. I had the idea for this project when friends in a groupchat wanted statistics on how many messages had been ever sent in the groupchat we are all in. I looked into it and realized that GroupMe has an API. At the start this bot only had basic functionality and just statistics for the chat. However, it soon began to develop further with different APIs ranging from Joke APIs, Quote APIs, and finally my other functions I made. It was a fun way to develop something that could interact with my friends and not just for my own enjoyment. Later in the development cycle this was my first instance with deploying an application to heroku and using continuous deployment with my private github repository.",
+        "projecttitle": "groupme-bot",
+        "projecturl": null,
+        "imgsource": "https://i.imgur.com/ICmLnmp.png",
+        "articletitle": "GroupMe Bot",
+        "bold_intro": "Chatbot"
+    },
+    {
+        "date": "March 28th, 2019",
+        "longtext": "This is a website that allows users to be notified via email when a loan from a subreddit is posted. I learned about how to actually deploy a website and have it functioning and learned a lot about linux and ubuntu. It was my first website with a login feature. This website was written all in node.js using express templates.",
+        "projecttitle": "lending-profit",
+        "projecturl": "https://lendingprofit.com/",
+        "imgsource": "https://i.imgur.com/MvNKuoS.png",
+        "articletitle": "Lending Profit",
+        "bold_intro": "Node.JS Website"
+    },
+    {
+        "date": "July 10th, 2019",
+        "longtext": "This project creates automatic videos from inputs from different reddit posts creating a video using aws polly as the text to speech engine. This was one of my largest projects and I learned a ton along the way. I learned how to use FFMpeg to a much higher degree than before. I ended up growing quite a substantial Youtube channel using this script of just under 3,000 subscribers and over 1 million views before abandoning the project.",
+        "projecttitle": "reddit-video-creation",
+        "projecturl": null,
+        "imgsource": "https://i.imgur.com/WvFbsxL.png",
+        "articletitle": "Reddit Video Creation",
+        "bold_intro": "Automatic Video Creation"
+    },
+    {
+        "date": "April 10th, 2019",
+        "longtext": "This script created videos that would have a top and bottom text that would match the current video's speech. I came up with this idea after being paid to do this by hand for way too little so I decided to automate my job. It was my first time using FFMpeg and I learned a lot during my course of development of this project.",
+        "projecttitle": "video-captioner",
+        "projecturl": null,
+        "imgsource": "https://i.imgur.com/uh09p0w.png",
+        "articletitle": "Video Captioner",
+        "bold_intro": "Video Captioner"
+    },
+    {
+        "date": "June 23rd, 2017",
+        "longtext": "This was my first website I ever created. It was also my first major development of anything in software. It was a simple amazon affiliates website, but I learned so much about development across the few months I was working on this. I built the entire thing with my own style sheets without bootstrap or anything similar to that. I learned about databases, php, javascript, html, css, and so much more. It was really my first major project and it will always remain a strong memory for me.",
+        "projecttitle": "dealsteal-us",
+        "projecturl": null,
+        "imgsource": "https://i.imgur.com/o01KYfV.png",
+        "articletitle": "DealSteal",
+        "bold_intro": "Affiliate Marketing Website"
+    }
 ]

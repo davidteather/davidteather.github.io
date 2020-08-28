@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 
 <head>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <title>David Teather</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -26,8 +22,7 @@
                 <div class="row">
                     <div class="col-sm-8 col-md-7 py-4">
                         <h4 class="text-white">David Teather</h4>
-                        <p class="text-muted">Hello, I'm David Teather. Thanks for visiting my website. Some of the most
-                            significant projects to me are listed below feel free to explore!</p>
+                        <p class="text-muted">Hello, I'm David Teather. Thanks for visiting my website. Some of the most significant projects to me are listed below feel free to explore!</p>
                         <br>
                         <p class="text-muted"><b>Email:</b> contact.davidteather@gmail.com</p>
                     </div>
@@ -39,8 +34,7 @@
                 <a href="index.html" class="navbar-brand d-flex align-items-center">
                     <strong>David Teather</strong>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -70,7 +64,8 @@
                         <p></p>
                         <p>Home Link: <a href="index.html" target="_self">Here</a></p>
 
-                    </div><!-- /.blog-post -->
+                    </div>
+                    <!-- /.blog-post -->
                 </div>
                 <div class="col-md-2"></div>
             </div>
@@ -79,7 +74,7 @@
 </body>
 
 <script>
-    jQuery.getJSON("https://davidteather.github.io/database.json", function (json) {
+    jQuery.getJSON("https://davidteather.github.io/database.json", function(json) {
         var responseRes = "";
         var title = window.location.href.split("title=")[1];
         var found = false
@@ -92,7 +87,7 @@
                 $('#articleTitle')[0].innerHTML = json[row]['articletitle'];
                 $('#longText')[0].innerHTML = json[row]['longtext'];
                 $('#date')[0].innerHTML = json[row]['date']
-                if (json[row].projecturl != 'NoUrl') {
+                if (json[row].projecturl != null) {
                     $('#projectLink')[0].innerHTML = 'Check it out <a href="' + json[row].projecturl +
                         '" target="_blank">here</a>';
                 }
