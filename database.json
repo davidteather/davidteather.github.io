@@ -74,7 +74,7 @@
         "date": "March 28th, 2019",
         "longtext": "This is a website that allows users to be notified via email when a loan from a subreddit is posted. I learned about how to actually deploy a website and have it functioning and learned a lot about linux and ubuntu. It was my first website with a login feature. This website was written all in node.js using express templates.",
         "projecttitle": "lending-profit",
-        "projecturl": "https://lendingprofit.com/",
+        "projecturl": null,
         "imgsource": "https://i.imgur.com/MvNKuoS.png",
         "articletitle": "Lending Profit",
         "bold_intro": "Node.JS Website"
