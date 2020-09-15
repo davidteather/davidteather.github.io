@@ -63,7 +63,7 @@
                         <p id="projectLink"></p>
 
                         <p></p>
-                        <p>Home Link: <a href="index.html" target="_self">Here</a></p>
+                        <b><p><a href="index.html" target="_self" class="text-reset nounderline" style="text-decoration: none;">Project Directory</a></p></b>
 
                     </div>
                     <!-- /.blog-post -->
@@ -89,8 +89,8 @@
                 $('#longText')[0].innerHTML = json[row]['longtext'];
                 $('#date')[0].innerHTML = json[row]['date']
                 if (json[row].projecturl != null) {
-                    $('#projectLink')[0].innerHTML = 'Check it out <a href="' + json[row].projecturl +
-                        '" target="_blank">here</a>';
+                    $('#projectLink')[0].innerHTML = '<b><a href="' + json[row].projecturl +
+                        '" target="_blank" style="text-decoration: none;">Check out the project </a></b>';
                 }
             }
         }
